@@ -13,7 +13,7 @@ Create ormconfig.js in root folder and fill in correct credentials (ormconfig-ex
  npm install
  npm run start
 ```
-Folder dist has all needed content ready to be hosted on web server.
+**Backend server should be running on port 3000. (Port can be changed in src/main.ts or with env. variable)**
 
 <hr>
 <hr>
