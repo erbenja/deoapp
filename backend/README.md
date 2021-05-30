@@ -1,12 +1,12 @@
-# deoapp-frontend
+# deoapp-backend
 
 ## Project setup
-Required
+### Required
 ```
  npm version ^6.2.0 
  postgresql database version ^12.2 
 ```
-Prepare dist
+### Prepare dist
 
 Create ormconfig.js in root folder and fill in correct credentials (ormconfig-example.js)
 ```
