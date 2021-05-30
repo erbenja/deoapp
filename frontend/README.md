@@ -1,19 +1,18 @@
 # deoapp-frontend
 
 ## Project setup
-Required
+### Required
 ```
  npm version ^6.2.0 
 ```
-Prepare dist
+### Prepare dist
 
-* replace baseURL in http-commons.js with address of backend
-* commands
+Replace baseURL in http-commons.js with address of backend
 ```
  npm install
  npm build
 ```
-Folder dist has all needed content ready to be hosted on web server.
+**Folder dist has all needed content ready to be hosted on web server.**
 
 <hr>
 <hr>
