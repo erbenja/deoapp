@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<div id="app-7">
+    <form v-on:submit.prevent>
+        <p>author: {{post.author.username}}</p>
+        <p>created: {{post.created}}</p>
+        <p>last modified: {{post.lastModified}}</p>
+        <input v-model="post.title" value="post.title">
+        <input v-model="post.content" value="post.title">
+        <button v-on:click="onSubmit">Submit!</button>
+    </form>
+</div>
+
+
+<script>
+    var app7 = new Vue({
+        el: '#app-7',
+        data: {
+            post: {author: {}},
+            id: undefined
+        },
+        mounted() {
+            const id = new URL(location.href).searchParams.get('postId');
+            fetch(`http://localhost:3000/api/posts/${id}`)
+                .then(res => res.json())
+                .then(result => this.post = result);
+            this.id = id;
+        },
+        methods: {
+            onSubmit: function () {
+                fetch(`http://localhost:3000/api/posts/${this.id}`,
+                    {
+                        method: 'PUT',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(this.post)
+                    })
+                    .then(res => res.json())
+                    .then(result => this.post = result);
+                // this.post.title = "this post has been altered";
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

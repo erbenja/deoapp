@@ -1,0 +1,19 @@
+<!doctype html>
+<header>
+    <title>TITLE NAME</title>
+</header>
+<body>
+<input id="INPUT">
+<div>DIV ELEMENT</div>
+<a href="post.html">LINK TO POST</a>
+</body>
+</html>
+
+<script>
+    fetch('/post')
+        .then(response => response.json())
+        .then(data => {
+            // Do what you want with your data
+            console.log(data[1]);
+        });
+</script>

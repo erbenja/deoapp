@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test REST API</title>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div id="content"></div>
+
+
+</body>
+
+<script>
+    fetch("http://localhost:3000/api/posts")
+        .then(res => res.json())
+        .then(data => appendPosts(data));
+
+    function appendPosts(data) {
+        const el = document.querySelector('#content');
+        // const response = this.responseText.json();
+        // debugger;
+        // for(let i = 0; i < response; i++){
+        data.forEach(post => {
+            console.log(post);
+            const postEl = createPost(post);
+            el.appendChild(postEl);
+        });
+    }
+
+    function createPost(post){
+        const div = document.createElement('div');
+        const title = document.createElement('div');
+        title.innerHTML = post.title;
+        const author = document.createElement('div');
+        author.innerHTML = post.author;
+        const content = document.createElement('div');
+        content.innerHTML = post.content;
+        const created = document.createElement('div');
+        created.innerHTML = post.created;
+        const modified = document.createElement('div');
+        modified.innerHTML = post.lastModified;
+
+        div.appendChild(title);
+        div.appendChild(author);
+        div.appendChild(content);
+        div.appendChild(created);
+        div.appendChild(modified);
+
+        return div;
+    }
+    //
+    // const oReq = new XMLHttpRequest();
+    //
+    // oReq.addEventListener('load', reqListener);
+    // oReq.open("GET", "http://localhost:3000/api/posts");
+    // oReq.send();
+
+</script>
+
+
+</html>
