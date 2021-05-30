@@ -1,7 +1,5 @@
 <h2>How to setup this concrete project:</h2>
 
-edit file ormconfig-example.js with your db credentials
-
 <h5>Requirements:<h5>
 <ul>
 <li> npm version ^6.2.0 </li>
@@ -11,7 +9,7 @@ edit file ormconfig-example.js with your db credentials
 <h5>Setup</h5>
 <ul>
 <li>1. npm install</li>
-<li>2. create ormconfig.js in root and fill in correct credentials (ormconfig-example.js)</li>
+<li>2. create ormconfig.js in root folder and fill in correct credentials (ormconfig-example.js)</li>
 <li>3. npm run start  {on some systems it fails (dont know why), try running from root directory ts-node src/main.ts}</li>
 </ul>
 
