@@ -15,3 +15,11 @@ Prepare dist
 ```
 Folder dist has all needed content ready to be hosted on web server.
 
+<hr>
+<hr>
+<hr>
+
+## License
+
+  Vue.js is [MIT licensed](LICENSE).
+
