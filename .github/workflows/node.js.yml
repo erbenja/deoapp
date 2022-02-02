@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      working-directory: './backend'
+      working-directory: 'backend'
 
     strategy:
       matrix:
@@ -27,6 +27,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
+        path: "backend/node_modules"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
