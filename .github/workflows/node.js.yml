@@ -10,10 +10,10 @@ on:
     branches: [ main ]
 
 jobs:
-  testBackend:
-
+  tests:
+    timeout-minutes: 2
     runs-on: ubuntu-latest
-    
+
     defaults:
       run:
         working-directory: 'backend'
@@ -23,6 +23,18 @@ jobs:
         node-version: [12.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
+
+    # Service containers to run with `container-job`
+    services:
+      # Label used to access the service container
+      postgres:
+        # Docker Hub image
+        image: postgres
+        # Provide the password for postgres
+        env:
+          POSTGRES_PASSWORD: postgres 
+        ports:
+          - 5432:5432
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -31,31 +43,27 @@ jobs:
         cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    - run: |
+        cp ormconfig-example.js ormconfig.js
+        npm ci
+        npm run start &
     #- run: npm run build --if-present
-    - run: npm test
-
-  testFrontend:
-
-    runs-on: ubuntu-latest
-    
-    defaults:
-      run:
-        working-directory: 'backend'
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v2
+    #- run: npm test
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        cache-dependency-path: "backend/package-lock.json"
+        cache-dependency-path: "frontend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    #- run: npm run build --if-present
-    - run: npm run start
+    - working-directory: 'frontend'
+      run: |
+        npm ci
+        npm run serve &
+
+    - name: Sleep for 30 seconds
+      run: sleep 30s
+      shell: bash
+    - working-directory: 'frontend'
+      run: npm run cy:run
+   
+  
