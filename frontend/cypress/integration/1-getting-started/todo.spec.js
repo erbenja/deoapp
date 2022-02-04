@@ -24,5 +24,8 @@
     // Again we'll use `contains` to find the <label> element and then use the `parents` command
     // to traverse multiple levels up the dom until we find the corresponding <li> element.
     // Once we get that element, we can assert that it has the completed class.
-    cy.get('input#username');
+    cy.get('input#username').type('admin');
+    cy.get('input#password').type('password');
+    cy.get('button[type=submit]').click();
+    cy.url().should('contain', '/admin');
   })

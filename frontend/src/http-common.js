@@ -7,7 +7,7 @@ export default {
 };
 
 export const HTTP = axios.create({
-    baseURL: 'http://www.donerben.com:3000/api/',
+    baseURL: 'http://localhost:3000/api/',
     // headers: {
     //     Authorization: 'Bearer ' + localStorage.getItem('token'),
     // }
