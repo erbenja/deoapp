@@ -33,6 +33,7 @@ jobs:
         # Provide the password for postgres
         env:
           POSTGRES_PASSWORD: postgres
+        options: -d -p 5432:5432
           
     steps:
     - uses: actions/checkout@v2
