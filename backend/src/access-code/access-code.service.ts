@@ -13,11 +13,9 @@ import {ROargs} from "../shared/base-ro";
 @Injectable()
 export class AccessCodeService extends BaseService<AccessCodeEntity, AccessCodeRO, AccessCodeDTO> {
     constructor(@InjectRepository(AccessCodeEntity) private codesRepository: Repository<AccessCodeEntity>,
-                @InjectRepository(QuestionEntity) private questionsRepository: Repository<QuestionEntity>,
                 @InjectRepository(EvaluatedQuestionEntity) private evaluatedQuestionsRepository: Repository<EvaluatedQuestionEntity>) {
         super(codesRepository);
     }
-
 
     async create(createDTO: AccessCodeDTO): Promise<AccessCodeRO> {
         throw new HttpException(

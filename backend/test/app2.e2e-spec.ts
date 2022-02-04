@@ -24,7 +24,7 @@ describe('AppController (e2e)', () => {
     await connection.close()  // <-- important
   });
 
-  it('/ (GET1)', () => {
+  it('/ (GET3)', () => {
     return request(app.getHttpServer())
       .get('/help')
       .expect(200)
@@ -33,7 +33,7 @@ describe('AppController (e2e)', () => {
 
 
   
-  it('/ (GET2)', () => {
+  it('/ (GET4)', () => {
     return request(app.getHttpServer())
       .get('/help')
       .expect(200)
