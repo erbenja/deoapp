@@ -61,7 +61,7 @@ jobs:
         npm run serve &
 
     - name: Sleep for 30 seconds
-      run: sleep 30s
+      run: sleep 60s
       shell: bash
     - working-directory: 'frontend'
       run: npm run cy:run
