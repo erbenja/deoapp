@@ -43,6 +43,8 @@ jobs:
         cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Install wait-for
+      run: npm install -g wait-port
     - name: Start Nest.js Backend
       run: |
         cp ormconfig-example.js ormconfig.js
@@ -61,10 +63,11 @@ jobs:
       run: |
         npm ci
         npm run serve &
-
-    - name: Wait for B&F to start
-      run: sleep 90s
-      shell: bash
+        wait-port 3000
+        wait-port 8080
+   # - name: Wait for B&F to start
+   #   run: sleep 90s
+   #   shell: bash
     - name: 'Init DB'
       run: npm run mig:init
     - working-directory: 'frontend'
