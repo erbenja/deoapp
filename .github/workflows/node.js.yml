@@ -43,25 +43,25 @@ jobs:
         cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    # - name: Cache dependencies
-    #   uses: actions/cache@v2
-    #   with:
-    #     path: ~/.npm
-    #     key: npm-b-${{ hashFiles('backend/package-lock.json') }}
-    #     restore-keys: npm-b-
-    # - name: Cache dependencies
-    #   uses: actions/cache@v2
-    #   with:
-    #     path: ~/.npm
-    #     key: npm-f-${{ hashFiles('frontend/package-lock.json') }}
-    #     restore-keys: npm-f-
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: npm-b-${{ hashFiles('backend/package-lock.json') }}
+        restore-keys: npm-b-
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: npm-f-${{ hashFiles('frontend/package-lock.json') }}
+        restore-keys: npm-f-
     - name: Install wait-for
       run: npm install -g wait-port
     - name: Start Nest.js Backend
       run: |
         cp ormconfig-example.js ormconfig.jsS
         npm ci
-        Snpm test
+        npm test
         npm run start &
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v2
