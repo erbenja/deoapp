@@ -39,15 +39,15 @@ jobs:
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
-      path: ~/.npm
-      key: npm-b-${{ hashFiles('backend/package-lock.json') }}
-      restore-keys: npm-b-
+        path: ~/.npm
+        key: npm-b-${{ hashFiles('backend/package-lock.json') }}
+        restore-keys: npm-b-
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
-      path: ~/.npm
-      key: npm-f-${{ hashFiles('frontend/package-lock.json') }}
-      restore-keys: npm-f-
+        path: ~/.npm
+        key: npm-f-${{ hashFiles('frontend/package-lock.json') }}
+        restore-keys: npm-f-
     # - uses: actions/checkout@v2
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v2
