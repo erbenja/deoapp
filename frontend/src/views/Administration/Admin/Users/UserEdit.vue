@@ -9,7 +9,7 @@
             <v-text-field type="text" label="příjemní" disabled v-model="user.surname"/>
             <v-text-field type="text" label="uživatelské jméno" disabled v-model="user.username"/>
             <v-text-field type="email" label="email" disabled v-model="user.email"/>
-
+            <v-text-field type="username" label="username" disabled v-model="user.username"/>
             <!--                    <v-card-actions class="justify-center">-->
             <!--                        <v-btn color="success" v-on:click="updateAccount">-->
             <!--                            &lt;!&ndash;                            <v-icon>&ndash;&gt;-->

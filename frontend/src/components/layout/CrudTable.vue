@@ -3,7 +3,7 @@
         <v-row>
             <!--        create new item-->
             <v-col cols="4">
-                <v-btn @click="goTo(createName)" v-if="createName !== undefined">
+                <v-btn id="create-new" @click="goTo(createName)" v-if="createName !== undefined">
                     <v-icon
                             class="mr-6"
                             color="green"
@@ -19,6 +19,7 @@
             <v-col cols="4">
                 <div v-if="searchProp !== undefined">
                     <v-text-field
+                            id="search-table"
                             v-model="search"
                             append-icon="mdi-magnify"
                             label="Search"

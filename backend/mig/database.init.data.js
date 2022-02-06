@@ -14,7 +14,7 @@ const querySets = {
     insertUsers: {
         query: "insert into account(id, username, password, email, firstname, surname) values($1, $2, $3, $4, $5, $6)",
         values: [
-            [-1, 'admin', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'admin@email.com', 'Admin', 'Novotny'],
+            [-1, 'admin', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'admin@email.com', 'Adam', 'Novotny'],
         ]
     },
     initPermissionTypes: {

@@ -43,6 +43,7 @@
                     {{adminItem.title}}
                 </v-btn>
                 <v-btn
+                        id="login"
                         v-if="!this.$store.getters.isLoggedIn"
                         text
                         @click="loginItem.action()">
@@ -50,6 +51,7 @@
                     {{loginItem.title}}
                 </v-btn>
                 <v-btn
+                        id="logout"
                         v-if="this.$store.getters.isLoggedIn"
                         text
                         @click="logoutItem.action()">

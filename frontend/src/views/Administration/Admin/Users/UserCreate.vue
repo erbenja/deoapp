@@ -6,11 +6,11 @@
                 <v-card class="px-4">
                     <v-card-title>Nový uživatel</v-card-title>
 
-                    <v-text-field type="text" label="křestní jméno" v-model="user.firstname"/>
-                    <v-text-field type="text" label="příjmení" v-model="user.surname"/>
-                    <v-text-field type="text" label="uživatelské jméno" v-model="user.username"/>
-                    <v-text-field type="text" label="heslo" v-model="user.password"/>
-                    <v-text-field type="email" label="email" :rules="[this.$rules.required, this.$rules.email]"
+                    <v-text-field id="firstname" type="text" label="křestní jméno" v-model="user.firstname"/>
+                    <v-text-field id="surname" type="text" label="příjmení" v-model="user.surname"/>
+                    <v-text-field id="username" type="text" label="uživatelské jméno" v-model="user.username"/>
+                    <v-text-field id="password" type="text" label="heslo" v-model="user.password"/>
+                    <v-text-field id="email" type="email" label="email" :rules="[this.$rules.required, this.$rules.email]"
                                   v-model="user.email"/>
 
                     <v-card-actions class="justify-center">
@@ -44,12 +44,13 @@
         methods: {
             createUser: function () {
                 HTTP.post("/accounts", {...this.user})
-                    .then(() => {
+                    .then((res) => {
+                        const newId = res.data.id;
                         this.$store.dispatch('popMessage', {
                             text: 'Nový uživatel byl vytvořen',
                             color: 'success'
                         });
-                        this.$router.push({name: 'AdminUsers'})
+                        this.$router.push({name: 'UserEdit', params: {id: newId}})
                     })
                     .catch(() => this.$store.dispatch('popMessage', {
                         text: 'Chyba na serveru. Zkuste znovu nebo později',

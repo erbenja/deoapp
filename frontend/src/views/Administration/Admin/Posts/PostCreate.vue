@@ -6,8 +6,8 @@
                 <v-card class="px-4">
                     <v-card-title>Nový článek</v-card-title>
 
-                    <v-text-field type="text" label="nadpis" required v-model="post.title"></v-text-field>
-                    <v-textarea v-model="post.content" label="obsah" placeholder="vyplňte obsah článku..."></v-textarea>
+                    <v-text-field id="title" type="text" label="nadpis" required v-model="post.title"></v-text-field>
+                    <v-textarea id="content" v-model="post.content" label="obsah" placeholder="vyplňte obsah článku..."></v-textarea>
 
                     <v-card-actions class="justify-center">
                         <v-btn color="success" v-on:click="createPost">

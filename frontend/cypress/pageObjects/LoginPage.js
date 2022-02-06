@@ -1,4 +1,4 @@
-class LoginPage {
+export default class LoginPage {
     visit() {
         cy.visit("/login", {failOnStatusCode: false});
         return this;
@@ -23,12 +23,4 @@ class LoginPage {
         this.typeUsername(username).typePassword(password).clickLoginButton();
         return this;
     }
-
-    waitForRedirection() {
-        cy.url().should('contain', '/administration');
-        return this;
-    }
-
 }
-
-export default LoginPage

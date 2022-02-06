@@ -1,6 +1,6 @@
-class AdministrationPage {
+export default class AdministrationPage {
     visit() {
-        cy.visit("/administration", {failOnStatusCode: false});
+        cy.visit("/admin", {failOnStatusCode: false});
         return this;
     }
 
@@ -12,12 +12,4 @@ class AdministrationPage {
         cy.get('button.admin#AdminUsers').click();
         return this;
     }
-
-    waitForRedirection(matchString) {
-        cy.url().should('contain', matchString);
-        return this;
-    }
-
 }
-
-export default AdministrationPage
