@@ -11,13 +11,13 @@ on:
 
 jobs:
   backend-tests:
-      timeout-minutes: 3
-      runs-on: ubuntu-latest
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
 
-      defaults:
+    defaults:
       run:
         working-directory: 'backend'
-      steps:
+    steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
@@ -25,12 +25,9 @@ jobs:
         cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install wait-for
-      run: npm install -g wait-port
+
     - name: Install Node.js Backend
-      run: |
-        cp ormconfig-example.js ormconfig.js
-        npm ci
+      run: npm ci
     - name: Test Nest.js Backend
       run: npm run test
 
@@ -67,6 +64,7 @@ jobs:
         cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
     - name: Install wait-for
       run: npm install -g wait-port
     - name: Install Node.js Backend
@@ -81,6 +79,7 @@ jobs:
         cache-dependency-path: "frontend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
     - name: Start Vue.js Frontend
       working-directory: 'frontend'
       run: |
