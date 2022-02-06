@@ -1,6 +1,6 @@
 {
     "pluginsFile": false,
     "video": false,
-    "baseUrl": "http://localhost:8081",
-    "baseUrls": "http://donerben.com/"
+    "baseUrl": "http://localhost:8080",
+    "baseUrls": "http://donerben.com"
 }
