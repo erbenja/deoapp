@@ -36,6 +36,13 @@ jobs:
         ports:
           - 5432:5432
     steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        cache-dependency-path: "backend/package-lock.json"
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
@@ -48,13 +55,6 @@ jobs:
         path: ~/.npm
         key: npm-f-${{ hashFiles('frontend/package-lock.json') }}
         restore-keys: npm-f-
-    # - uses: actions/checkout@v2
-    # - name: Use Node.js ${{ matrix.node-version }}
-    #   uses: actions/setup-node@v2
-    #   with:
-    #     cache-dependency-path: "backend/package-lock.json"
-    #     node-version: ${{ matrix.node-version }}
-    #     cache: 'npm'
     - name: Install wait-for
       run: npm install -g wait-port
     - name: Start Nest.js Backend
