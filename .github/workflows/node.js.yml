@@ -43,7 +43,8 @@ jobs:
         cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: |
+    - name: Start Nest.js Backend
+      run: |
         cp ormconfig-example.js ormconfig.js
         npm ci
         npm run start &
@@ -55,13 +56,14 @@ jobs:
         cache-dependency-path: "frontend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - working-directory: 'frontend'
+    - name: Start Vue.js Frontend
+      working-directory: 'frontend'
       run: |
         npm ci
-        npm run serve
+        npm run serve &
 
-    - name: Sleep for 30 seconds
-      run: sleep 60s
+    - name: Wait for B&F to start
+      run: sleep 90s
       shell: bash
     - working-directory: 'frontend'
       run: npm run cy:run
