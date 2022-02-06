@@ -38,6 +38,7 @@ export class OlympiadRoundEntity extends BaseEntity<OlympiadRoundRO> {
     nextRound: OlympiadRoundEntity;
 
     @OneToOne(type => OlympiadRoundEntity, round => round.nextRound)
+    @JoinColumn()
     previousRound: OlympiadRoundEntity;
 
     @ManyToOne(type => RoundTypeEntity, roundType => roundType.olympiadRounds, {

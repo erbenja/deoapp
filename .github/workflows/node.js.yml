@@ -52,12 +52,12 @@ jobs:
         npm run start &
     #- run: npm run build --if-present
     #- run: npm test
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        cache-dependency-path: "frontend/package-lock.json"
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+    # - name: Use Node.js ${{ matrix.node-version }}
+    #   uses: actions/setup-node@v2
+    #   with:
+    #     cache-dependency-path: "frontend/package-lock.json"
+    #     node-version: ${{ matrix.node-version }}
+    #     cache: 'npm'
     - name: Start Vue.js Frontend
       working-directory: 'frontend'
       run: |
@@ -70,7 +70,8 @@ jobs:
    #   shell: bash
     - name: 'Init DB'
       run: npm run mig:init
-    - working-directory: 'frontend'
+    - name: 'Cypress tests'
+      working-directory: 'frontend'
       run: npm run cy:run
 
 

@@ -7,7 +7,7 @@
                 <v-col v-for="role in roles" :key="role.name" cols="3">
                     <v-card class="d-flex flex-column px-4 pb-4" v-if="hasPermission(role.name)">
                         <v-card-title>{{role.name}}</v-card-title>
-                        <v-btn v-for="item in role.items" :key="item.text" @click="goTo(item.path)" :color="role.color"
+                        <v-btn :class="role.path" :id="item.path" v-for="item in role.items" :key="item.text" @click="goTo(item.path)" :color="role.color"
                                class="my-2">
                             {{item.text}}
                         </v-btn>
