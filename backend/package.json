@@ -19,7 +19,8 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json --forceExit",
     "test:e2eDetect": "jest --config ./test/jest-e2e.json --detectOpenHandles",
-    "heroku-postbuild": "npm install --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "npm install --no-shrinkwrap && npm run build",
+    "mig:init": "node mig/database.init.data.js"
   },
   "dependencies": {
     "@nestjs-modules/mailer": "^1.5.1",
@@ -40,6 +41,7 @@
     "handlebars": "^4.7.3",
     "hbs": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
     "nodemailer": "^6.4.10",
     "passport": "^0.4.1",
     "passport-accesstoken": "^0.1.0",
@@ -53,8 +55,8 @@
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.4",
     "swagger-ui-express": "^4.1.4",
-    "typeorm": "^0.2.24",
     "ts-node": "^8.0.0",
+    "typeorm": "^0.2.24",
     "typescript": "^3.8.2"
   },
   "devDependencies": {
