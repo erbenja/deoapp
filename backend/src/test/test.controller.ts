@@ -31,7 +31,7 @@ export class TestController {
     getExampleTest(
         // @Param('id', ParseIntPipe) id,
     ) {
-        return this.service.getById(10000, allRelations, {});
+        return this.service.getById(-1, allRelations, {});
     }
 
     @ApiOkResponse({type: [TestRO]})

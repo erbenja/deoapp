@@ -10,8 +10,32 @@ on:
     branches: [ main ]
 
 jobs:
-  tests:
-    timeout-minutes: 5
+  backend-tests:
+      timeout-minutes: 3
+      runs-on: ubuntu-latest
+
+      defaults:
+      run:
+        working-directory: 'backend'
+      steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        cache-dependency-path: "backend/package-lock.json"
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: Install wait-for
+      run: npm install -g wait-port
+    - name: Install Node.js Backend
+      run: |
+        cp ormconfig-example.js ormconfig.js
+        npm ci
+    - name: Test Nest.js Backend
+      run: npm run test
+
+  frontend-tests:
+    timeout-minutes: 3
     runs-on: ubuntu-latest
 
     defaults:
@@ -45,12 +69,12 @@ jobs:
         cache: 'npm'
     - name: Install wait-for
       run: npm install -g wait-port
-    - name: Start Nest.js Backend
+    - name: Install Node.js Backend
       run: |
         cp ormconfig-example.js ormconfig.js
         npm ci
-        npm run test
-        npm run start &
+    - name: Start Nest.js Backend
+      run: npm run start &
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:

@@ -107,7 +107,7 @@
             } else {
               res = await HTTP.get(`tests/${this.id}`);
             }
-			
+
             const timeLimit = res.data.timeLimit;
             this.timeLeft = timeLimit;
 

@@ -30,15 +30,21 @@ const querySets = {
         values: [
             [-1, 1, -1],
         ]
+    },
+    insertExampleTest: {
+        query: 'insert into test(id, "timeLimit", "closed") values($1, $2, $3)',
+        values: [
+            [-1, 5400, true],
+        ]
     }
 }
 
 
 pgclient.connect(async err => {
     if (err) {
-        console.error('connection error', err.stack)
+        console.error('CONNECTION ERROR', err.stack)
     } else {
-        console.log('connected')
+        console.log('CONNECTED')
 
         await pgclient.query('BEGIN');
 
@@ -49,18 +55,19 @@ pgclient.connect(async err => {
             console.log(query);
             try {
                 for(let j = 0; j < values.length; j += 1) {
+                    console.log(`-${values[j]}`);
                     await pgclient.query(query, values[j]);
                 }
             } catch (err) {
                 console.log(err);
-                console.log('rollback');
+                console.log('ROLLBACK');
                 await pgclient.query('ROLLBACK');
                 await pgclient.end();
                 throw err;
             }
         }
 
-        console.log('commit');
+        console.log('COMMIT');
         await pgclient.query('COMMIT');
 
         pgclient.end();
