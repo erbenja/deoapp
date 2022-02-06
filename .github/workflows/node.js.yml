@@ -46,7 +46,7 @@ jobs:
     - run: |
         cp ormconfig-example.js ormconfig.js
         npm ci
-        npm run start &
+        npm run start
     #- run: npm run build --if-present
     #- run: npm test
     - name: Use Node.js ${{ matrix.node-version }}
