@@ -18,15 +18,15 @@ const querySets = {
         ]
     },
     initPermissionTypes: {
-        query: "insert into permissionType(id, name) values($1, $2)",
+        query: 'insert into "permissionType" (id, name) values($1, $2)',
         values: [
-            // [1, 'admin'],
+            [1, 'admin'],
             [2, 'evaluator'],
             [3, 'creator'],
         ]
     },
     insertPermissions: {
-        query: "insert into permission(id, typeId, accountId) values($1, $2, $3)",
+        query: 'insert into permission(id, "typeId", "accountId") values($1, $2, $3)',
         values: [
             [-1, 1, -1],
         ]
@@ -55,6 +55,8 @@ pgclient.connect(async err => {
                 console.log(err);
                 console.log('rollback');
                 await pgclient.query('ROLLBACK');
+                await pgclient.end();
+                throw err;
             }
         }
 
