@@ -36,22 +36,33 @@ jobs:
         ports:
           - 5432:5432
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - name: Cache dependencies
+      uses: actions/cache@v2
       with:
-        cache-dependency-path: "backend/package-lock.json"
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      path: ~/.npm
+      key: npm-b-${{ hashFiles('backend/package-lock.json') }}
+      restore-keys: npm-b-
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+      path: ~/.npm
+      key: npm-f-${{ hashFiles('frontend/package-lock.json') }}
+      restore-keys: npm-f-
+    # - uses: actions/checkout@v2
+    # - name: Use Node.js ${{ matrix.node-version }}
+    #   uses: actions/setup-node@v2
+    #   with:
+    #     cache-dependency-path: "backend/package-lock.json"
+    #     node-version: ${{ matrix.node-version }}
+    #     cache: 'npm'
     - name: Install wait-for
       run: npm install -g wait-port
     - name: Start Nest.js Backend
       run: |
-        cp ormconfig-example.js ormconfig.js
+        cp ormconfig-example.js ormconfig.jsS
         npm ci
+        Snpm test
         npm run start &
-    #- run: npm run build --if-present
-    #- run: npm test
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v2
     #   with:
@@ -65,9 +76,6 @@ jobs:
         npm run serve &
         wait-port 3000
         wait-port 8080
-   # - name: Wait for B&F to start
-   #   run: sleep 90s
-   #   shell: bash
     - name: 'Init DB'
       run: npm run mig:init
     - name: 'Cypress tests'
