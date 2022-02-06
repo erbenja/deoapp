@@ -40,17 +40,19 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        cache-dependency-path: "backend/package-lock.json"
+        # cache-dependency-path: "backend/package-lock.json"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install wait-for
       run: npm install -g wait-port
     - name: Start Nest.js Backend
       run: |
-        cp ormconfig-example.js ormconfig.jsS
+        cp ormconfig-example.js ormconfig.js
         npm ci
-        npm test
+        npm run test
         npm run start &
+    #- run: npm run build --if-present
+    #- run: npm test
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v2
     #   with:
@@ -64,10 +66,11 @@ jobs:
         npm run serve &
         wait-port 3000
         wait-port 8080
+   # - name: Wait for B&F to start
+   #   run: sleep 90s
+   #   shell: bash
     - name: 'Init DB'
       run: npm run mig:init
     - name: 'Cypress tests'
       working-directory: 'frontend'
       run: npm run cy:run
-
-
