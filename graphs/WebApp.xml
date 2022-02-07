@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graph description="" id="2" linkage="" name="WebApp" type="ACTIVITY_DIAGRAM" version="">
+    <node description="" height="25.0" id="2" name="START" priority="" style="STYLE_ACTIVITY_START" width="25.0" xpos="620.4999999999999" ypos="22.4146133050686"/>
+    <edge description="" id="38" name="1" priority="" source="2" target="3"/>
+    <node description="" height="40.0" id="3" name="Home" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="593.0" ypos="97.4146133050686"/>
+    <edge description="" id="39" name="69" priority="" source="3" target="36"/>
+    <node description="" height="40.0" id="4" name="About us" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="487.0" ypos="292.4146133050686"/>
+    <edge description="" id="40" name="73" priority="" source="4" target="36"/>
+    <node description="" height="40.0" id="5" name="Enter code" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="308.0" ypos="292.4146133050686"/>
+    <edge description="" id="41" name="9" priority="" source="5" target="28"/>
+    <node description="" height="40.0" id="6" name="Administration" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="572.0" ypos="577.4146133050687"/>
+    <edge description="" id="42" name="59" priority="" source="6" target="37"/>
+    <node description="" height="70.0" id="7" name="Is logged in?" priority="" style="STYLE_ACTIVITY_DECISION" width="100.0" xpos="737.0" ypos="277.4146133050686"/>
+    <edge description="" id="43" name="NOT LOGGED IN" priority="" source="7" target="8"/>
+    <edge description="" id="44" name="LOGGED IN" priority="" source="7" target="6"/>
+    <node description="" height="40.0" id="8" name="LOGIN" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="571.0" ypos="397.4146133050686"/>
+    <edge description="" id="45" name="66" priority="" source="8" target="29"/>
+    <node description="" height="40.0" id="9" name="Example test" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="597.0" ypos="292.4146133050686"/>
+    <edge description="" id="46" name="76" priority="" source="9" target="3"/>
+    <node description="" height="40.0" id="10" name="Olympiad year" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="522.0" ypos="769.8414321527249"/>
+    <edge description="" id="47" name="50" priority="" source="10" target="33"/>
+    <node description="" height="40.0" id="11" name="Results" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="413.0" ypos="769.8414321527249"/>
+    <edge description="" id="48" name="25" priority="" source="11" target="23"/>
+    <node description="" height="40.0" id="12" name="Tests" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="662.0" ypos="769.8414321527249"/>
+    <edge description="" id="49" name="26" priority="" source="12" target="24"/>
+    <node description="" height="40.0" id="13" name="Users" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="832.0" ypos="769.8414321527249"/>
+    <edge description="" id="50" name="53" priority="" source="13" target="34"/>
+    <node description="" height="40.0" id="14" name="Posts" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="1002.0" ypos="769.8414321527249"/>
+    <edge description="" id="51" name="56" priority="" source="14" target="35"/>
+    <node description="" height="40.0" id="15" name="Contestants" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="90.0" ypos="769.8414321527249"/>
+    <edge description="" id="52" name="47" priority="" source="15" target="32"/>
+    <node description="" height="40.0" id="16" name="Evaluations" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="234.0" ypos="769.8414321527249"/>
+    <edge description="" id="53" name="29" priority="" source="16" target="27"/>
+    <node description="" height="40.0" id="17" name="New post" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="842.0" ypos="962.268251000381"/>
+    <edge description="" id="54" name="30" priority="" source="17" target="6"/>
+    <node description="" height="40.0" id="18" name="Edit post" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="1036.0" ypos="962.268251000381"/>
+    <edge description="" id="55" name="35" priority="" source="18" target="6"/>
+    <node description="" height="40.0" id="19" name="New user" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="622.0" ypos="962.268251000381"/>
+    <edge description="" id="56" name="38" priority="" source="19" target="6"/>
+    <node description="" height="40.0" id="20" name="Edit user" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="732.0" ypos="962.268251000381"/>
+    <edge description="" id="57" name="39" priority="" source="20" target="6"/>
+    <node description="" height="40.0" id="21" name="New olympiad &#10;year" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="511.00000000000006" ypos="962.268251000381"/>
+    <edge description="" id="58" name="79" priority="" source="21" target="6"/>
+    <node description="" height="40.0" id="22" name="Edit olympiad&#10;year" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="351.0" ypos="962.268251000381"/>
+    <edge description="" id="59" name="41" priority="" source="22" target="6"/>
+    <node description="" height="40.0" id="23" name="View Result" priority="" style="STYLE_ACTIVITY_NODE" width="110.0" xpos="361.0" ypos="872.2682510003812"/>
+    <edge description="" id="60" name="42" priority="" source="23" target="6"/>
+    <node description="" height="40.0" id="24" name="Edit test" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="681.0" ypos="872.2682510003812"/>
+    <edge description="" id="61" name="45" priority="" source="24" target="6"/>
+    <node description="" height="40.0" id="25" name="New Contestant" priority="" style="STYLE_ACTIVITY_NODE" width="110.0" xpos="16.0" ypos="962.268251000381"/>
+    <edge description="" id="62" name="46" priority="" source="25" target="6"/>
+    <node description="" height="40.0" id="26" name="View Contestant" priority="" style="STYLE_ACTIVITY_NODE" width="120.0" xpos="156.0" ypos="962.268251000381"/>
+    <edge description="" id="63" name="44" priority="" source="26" target="6"/>
+    <node description="" height="40.0" id="27" name="Evaluate &#10;protocol" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="251.0" ypos="872.2682510003812"/>
+    <edge description="" id="64" name="43" priority="" source="27" target="6"/>
+    <node description="" height="40.0" id="28" name="Test" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="461.0" ypos="397.4146133050686"/>
+    <edge description="" id="65" name="77" priority="" source="28" target="3"/>
+    <node description="" height="40.0" id="29" name="Valid login?" priority="" style="STYLE_ACTIVITY_DECISION" width="90.0" xpos="511.0" ypos="487.4146133050686"/>
+    <edge description="" id="66" name="YES" priority="" source="29" target="6"/>
+    <edge description="" id="67" name="NO" priority="" source="29" target="8"/>
+    <node description="" height="35.0" id="30" name="END B" priority="" style="STYLE_ACTIVITY_END" width="35.0" xpos="346.5" ypos="784.8292266101372"/>
+    <node description="" height="35.0" id="31" name="END A" priority="" style="STYLE_ACTIVITY_END" width="35.0" xpos="420.5" ypos="307.40240776248095"/>
+    <node description="" height="40.0" id="32" name="contestant_table" priority="" style="STYLE_ACTIVITY_DECISION" width="100.0" xpos="61.0" ypos="872.2682510003812"/>
+    <edge description="" id="68" name="48" priority="" source="32" target="25"/>
+    <edge description="" id="69" name="49" priority="" source="32" target="26"/>
+    <node description="" height="40.0" id="33" name="olympiad_year_table" priority="" style="STYLE_ACTIVITY_DECISION" width="120.0" xpos="501.0" ypos="872.2682510003812"/>
+    <edge description="" id="70" name="51" priority="" source="33" target="22"/>
+    <edge description="" id="71" name="52" priority="" source="33" target="21"/>
+    <node description="" height="40.0" id="34" name="users_table" priority="" style="STYLE_ACTIVITY_DECISION" width="90.0" xpos="821.0" ypos="872.2682510003812"/>
+    <edge description="" id="72" name="54" priority="" source="34" target="19"/>
+    <edge description="" id="73" name="55" priority="" source="34" target="20"/>
+    <node description="" height="40.0" id="35" name="posts_table" priority="" style="STYLE_ACTIVITY_DECISION" width="80.0" xpos="1001.0" ypos="872.2682510003812"/>
+    <edge description="" id="74" name="57" priority="" source="35" target="17"/>
+    <edge description="" id="75" name="58" priority="" source="35" target="18"/>
+    <node description="" height="40.0" id="36" name="public_navbar" priority="" style="STYLE_ACTIVITY_DECISION" width="80.0" xpos="504.0" ypos="187.4146133050686"/>
+    <edge description="" id="76" name="70" priority="" source="36" target="9"/>
+    <edge description="" id="77" name="71" priority="" source="36" target="5"/>
+    <edge description="" id="78" name="72" priority="" source="36" target="4"/>
+    <edge description="" id="79" name="74" priority="" source="36" target="3"/>
+    <edge description="" id="80" name="75" priority="" source="36" target="31"/>
+    <edge description="" id="81" name="78" priority="" source="36" target="7"/>
+    <node description="" height="40.0" id="37" name="admin_navbar" priority="" style="STYLE_ACTIVITY_DECISION" width="90.0" xpos="473.0" ypos="667.4146133050687"/>
+    <edge description="" id="82" name="60" priority="" source="37" target="15"/>
+    <edge description="" id="83" name="61" priority="" source="37" target="16"/>
+    <edge description="" id="84" name="62" priority="" source="37" target="11"/>
+    <edge description="" id="85" name="63" priority="" source="37" target="10"/>
+    <edge description="" id="86" name="64" priority="" source="37" target="13"/>
+    <edge description="" id="87" name="65" priority="" source="37" target="14"/>
+    <edge description="" id="88" name="67" priority="" source="37" target="12"/>
+    <edge description="" id="89" name="68" priority="" source="37" target="30"/>
+    <edge description="" id="90" name="40" priority="" source="37" target="6"/>
+</graph>

@@ -1,0 +1,67 @@
+0;START - Home - Example test - Home - Example test - Home - Enter code - Test - Home - Example test - Home - About us - Example test - Home - Home - Example test - Home - LOGIN - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Evaluations - Evaluate 
+protocol - Administration - Contestants - View Contestant - Administration - Evaluations - Evaluate 
+protocol - Administration - Evaluations - Evaluate 
+protocol - Administration - Results - View Result - Administration - Contestants - New Contestant - Administration - Results - View Result - Administration - Evaluations - Evaluate 
+protocol - Administration - Olympiad year - Edit olympiad
+year - Administration - Contestants - View Contestant - Administration - Results - View Result - Administration - Results - View Result - Administration - Olympiad year - New olympiad 
+year - Administration - Contestants - New Contestant - Administration - Olympiad year - Edit olympiad
+year - Administration - Evaluations - Evaluate 
+protocol - Administration - Users - New user - Administration - Contestants - View Contestant - Administration - Olympiad year - New olympiad 
+year - Administration - Evaluations - Evaluate 
+protocol - Administration - Posts - New post - Administration - Contestants - New Contestant - Administration - Users - Edit user - Administration - Contestants - View Contestant - Administration - Users - New user - Administration - Evaluations - Evaluate 
+protocol - Administration - Tests - Edit test - Administration - Contestants - New Contestant - Administration - Posts - Edit post - Administration - Contestants - View Contestant - Administration - Posts - New post - Administration - Evaluations - Evaluate 
+protocol - Administration - END B
+1;START - Home - Enter code - Test - Home - Enter code - Test - Home - About us - Enter code - Test - Home - Home - Enter code - Test - Home - Administration - Contestants - New Contestant - Administration - Tests - Edit test - Administration - Evaluations - Evaluate 
+protocol - Administration - Administration - Contestants - View Contestant - Administration - Tests - Edit test - Administration - Results - View Result - Administration - Users - New user - Administration - Results - View Result - Administration - Posts - New post - Administration - Results - View Result - Administration - Tests - Edit test - Administration - Olympiad year - Edit olympiad
+year - Administration - Results - View Result - Administration - END B
+2;START - Home - About us - About us - Home - About us - LOGIN - LOGIN - Administration - Evaluations - Evaluate 
+protocol - Administration - Contestants - New Contestant - Administration - END B
+3;START - Home - Home - Home - LOGIN - Administration - Results - View Result - Administration - Administration - Evaluations - Evaluate 
+protocol - Administration - Contestants - New Contestant - Administration - Administration - Results - View Result - Administration - Contestants - View Contestant - Administration - END B
+4;START - Home - LOGIN - Administration - Olympiad year - Edit olympiad
+year - Administration - Olympiad year - New olympiad 
+year - Administration - Results - View Result - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Administration - Olympiad year - Edit olympiad
+year - Administration - Users - New user - Administration - Olympiad year - New olympiad 
+year - Administration - Olympiad year - Edit olympiad
+year - Administration - Posts - New post - Administration - Olympiad year - New olympiad 
+year - Administration - Users - Edit user - Administration - Evaluations - Evaluate 
+protocol - Administration - Contestants - New Contestant - Administration - Administration - Users - New user - Administration - Users - Edit user - Administration - Results - View Result - Administration - Administration - Posts - Edit post - Administration - Evaluations - Evaluate 
+protocol - Administration - Administration - Tests - Edit test - Administration - Users - New user - Administration - Posts - New post - Administration - Users - Edit user - Administration - Olympiad year - Edit olympiad
+year - Administration - Tests - Edit test - Administration - Posts - Edit post - Administration - Results - View Result - Administration - END B
+5;START - Home - About us - Administration - Evaluations - Evaluate 
+protocol - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - END B
+6;START - Home - LOGIN - LOGIN - LOGIN - Administration - Users - New user - Administration - Tests - Edit test - Administration - Tests - Edit test - Administration - END B
+7;START - Home - Administration - Results - View Result - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - Contestants - View Contestant - Administration - Administration - Administration - END B
+8;START - Home - Administration - Olympiad year - Edit olympiad
+year - Administration - END B
+9;START - Home - Administration - Users - New user - Administration - END B
+10;START - Home - Administration - Posts - New post - Administration - Posts - Edit post - Administration - Olympiad year - Edit olympiad
+year - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+11;START - Home - Administration - Tests - Edit test - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+12;START - Home - Administration - END B
+13;START - Home - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+14;START - Home - Administration - Olympiad year - New olympiad 
+year - Administration - Posts - Edit post - Administration - Users - Edit user - Administration - Posts - Edit post - Administration - Posts - New post - Administration - Tests - Edit test - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Contestants - View Contestant - Administration - Administration - Administration - END B
+15;START - Home - LOGIN - Administration - Posts - New post - Administration - END B
+16;START - Home - Administration - Posts - New post - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+17;START - Home - Administration - Posts - Edit post - Administration - Tests - Edit test - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Contestants - View Contestant - Administration - Administration - Administration - END B
+18;START - Home - Administration - Posts - Edit post - Administration - END B
+19;START - Home - Administration - Posts - Edit post - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+20;START - Home - Administration - Users - Edit user - Administration - Users - New user - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+21;START - Home - Administration - Users - Edit user - Administration - Tests - Edit test - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Contestants - View Contestant - Administration - Administration - Administration - END B
+22;START - Home - Administration - Users - Edit user - Administration - END B
+23;START - Home - Administration - Users - Edit user - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+24;START - Home - Administration - Olympiad year - New olympiad 
+year - Administration - Tests - Edit test - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Contestants - View Contestant - Administration - Administration - Administration - END B
+25;START - Home - Administration - Olympiad year - New olympiad 
+year - Administration - END B
+26;START - Home - Administration - Olympiad year - New olympiad 
+year - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+27;START - Home - LOGIN - Administration - Tests - Edit test - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Contestants - View Contestant - Administration - Administration - Administration - END B
+28;START - Home - LOGIN - Administration - END B
+29;START - Home - LOGIN - Administration - Administration - Contestants - New Contestant - Administration - Contestants - View Contestant - Administration - Contestants - New Contestant - Administration - Administration - Administration - END B
+30;START - Home - END A
+31;START - Home - Example test - Home - END A
+32;START - Home - Enter code - Test - Home - END A
+33;START - Home - Home - END A
+34;START - Home - About us - END A

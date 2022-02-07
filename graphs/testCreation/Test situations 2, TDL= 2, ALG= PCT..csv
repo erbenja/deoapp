@@ -1,0 +1,20 @@
+0;START - END T
+1;START - Edit Test Time - END T
+2;START - Delete question - Toggle option correct - Edit option text - Delete option - Add option - Delete desciption
+photo - Upload description 
+photo - Edit points - Edit description - Add new question - Toggle Test 
+Open/Close State - Edit Test Time - Edit Test Time - END T
+3;START - Toggle Test 
+Open/Close State - END T
+4;START - Add new question - END T
+5;START - Edit description - END T
+6;START - Edit points - END T
+7;START - Upload description 
+photo - END T
+8;START - Delete desciption
+photo - END T
+9;START - Add option - END T
+10;START - Delete option - END T
+11;START - Edit option text - END T
+12;START - Toggle option correct - END T
+13;START - Delete question - END T
