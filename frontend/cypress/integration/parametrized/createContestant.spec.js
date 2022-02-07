@@ -6,7 +6,7 @@ describe('Create New Contestant - [Parametrized]', () => {
     beforeEach(() => {
         const loginPage = new LoginPage();
         loginPage.visit().logIn('admin', 'password');
-        cy.wait(400);
+        // cy.wait(400);
     })
 
     params.filter(a => a.valid).forEach(param => {

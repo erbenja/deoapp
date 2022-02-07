@@ -1,20 +1,18 @@
 /// <reference types="cypress" />
 
-import AdministrationPage from "../pageObjects/AdministrationPage";
-import AdminUsersPage from "../pageObjects/AdminUsersPage";
+import ExampleTestPage from "../pageObjects/ExampleTestPage";
 import ExampleTestLobbyPage from "../pageObjects/ExampleTestLobbyPage";
 import { waitForRedirection } from "../utils/common.checks";
 
 it('Can visit AdminUsers as Admin user', () => {
   const lobbyPage = new ExampleTestLobbyPage();
+  cy.on('window:confirm', () => true);
   lobbyPage.visit().clickStartTestButton();
 
-  const adminPage = new AdministrationPage();
-  adminPage.clickUsersButton();
+  waitForRedirection('/exampletest');
 
-  waitForRedirection('/admin/users');
+  const testPage = new ExampleTestPage();
+  testPage.clickEndTestButton();
 
-  const usersPage = new AdminUsersPage();
-  usersPage.displayedUsersShouldContain('Adam')
-    .displayedUsersShouldContain('Novotny');
+  waitForRedirection('/exampletestend');
 })

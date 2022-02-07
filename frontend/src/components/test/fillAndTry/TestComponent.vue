@@ -17,7 +17,7 @@
                             mdi-pencil
                         </v-icon>
                     </v-btn>
-                    <v-btn v-else class="align-self-end" color="error" width="150" @click="endTest">
+                    <v-btn v-else id="endTest" class="align-self-end" color="error" width="150" @click="endTest">
                         Ukončit test
                         <v-icon small>
                             mdi-close
