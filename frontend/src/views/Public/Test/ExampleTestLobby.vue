@@ -3,7 +3,7 @@
         <!--        <PublicHeader/>-->
         <v-container>
             <v-row class="justify-end">
-                <v-btn color="error" class="mb-4 mr-4" @click="goTo('Home')">
+                <v-btn id="return" color="error" class="mb-4 mr-4" @click="goTo('Home')">
                     <v-icon color="white">mdi-close</v-icon>
                     Zpět
                 </v-btn>
@@ -32,7 +32,7 @@
                 </v-col>
             </v-card>
             <v-row class="justify-center mt-4">
-                <v-btn x-large color="success" @click="startTest">ZAČÍT TEST</v-btn>
+                <v-btn id="startTest" x-large color="success" @click="startTest">ZAČÍT TEST</v-btn>
             </v-row>
         </v-container>
     </div>
