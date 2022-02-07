@@ -3,39 +3,41 @@
         <AdminHeader/>
         <v-container>
             <v-card class="pa-4 mx-auto" max-width="500">
-                <v-card-title>Nový soutězící</v-card-title>
-                <v-select label="ročník" :items="years"
-                          item-value="id" item-text="name" v-model="contestant.yearId">
-                </v-select>
+                <form>
+                    <v-card-title>Nový soutězící</v-card-title>
+                    <v-select id="olympiadYear" label="ročník" :items="years"
+                            item-value="id" item-text="name" v-model="contestant.yearId">
+                    </v-select>
 
-                <v-text-field type="text" label="křestní jméno" required v-model="contestant.firstname"></v-text-field>
-                <v-text-field type="text" label="příjmení" required v-model="contestant.surname"></v-text-field>
-                <v-text-field type="email" label="email" required v-model="contestant.email"></v-text-field>
+                    <v-text-field id="firstname" type="text" label="křestní jméno" required v-model="contestant.firstname"></v-text-field>
+                    <v-text-field id="surname" type="text" label="příjmení" required v-model="contestant.surname"></v-text-field>
+                    <v-text-field id="email" type="email" label="email" required v-model="contestant.email"></v-text-field>
 
-                <v-menu>
-                    <template v-slot:activator="{ on }">
-                        <!--                        <v-col cols="2">-->
-                        <v-text-field :value="contestant.birthdate" v-on="on" label="datum narození"
-                                      prepend-icon="mdi-calendar-range"></v-text-field>
-                        <!--                        </v-col>-->
-                    </template>
-                    <v-date-picker v-model="contestant.birthdate"></v-date-picker>
-                </v-menu>
+                    <v-text-field id="birthDate" type="date" label="datum narození" required v-model="contestant.birthdate"></v-text-field>
 
-                <v-text-field type="number" label="třída" required v-model="contestant.classNum"></v-text-field>
+                    <!-- <v-menu>
+                        <template v-slot:activator="{ on }">
+                            <v-text-field :value="contestant.birthdate" v-on="on" label="datum narození"
+                                        prepend-icon="mdi-calendar-range"></v-text-field>
+                        </template>
+                        <v-date-picker v-model="contestant.birthdate"></v-date-picker>
+                    </v-menu> -->
 
-                <v-select label="škola" :items="schools"
-                          item-value="id" item-text="name" v-model="contestant.schoolId">
-                </v-select>
+                    <v-text-field id="classNum" type="number" min="8" max="13" label="třída" required v-model="contestant.classNum"></v-text-field>
 
-                <v-card-actions class="justify-center">
-                    <v-btn color="success" v-on:click="createContestant">
-                        <v-icon>
-                            mdi-trash
-                        </v-icon>
-                        Registrovat
-                    </v-btn>
-                </v-card-actions>
+                    <v-select id="school" label="škola" :items="schools"
+                            item-value="id" item-text="name" v-model="contestant.schoolId">
+                    </v-select>
+
+                    <v-card-actions class="justify-center">
+                        <v-btn color="success" v-on:click="createContestant">
+                            <v-icon>
+                                mdi-trash
+                            </v-icon>
+                            Registrovat
+                        </v-btn>
+                    </v-card-actions>
+                </form>
             </v-card>
 
         </v-container>
@@ -61,7 +63,7 @@
                     email: '',
                     birthdate: '',
                     schoolId: -1,
-                    classNum: 0,
+                    classNum: 8,
                     yearId: -1,
                 },
                 years: [],
@@ -83,10 +85,10 @@
 
                 this.schools = res.data.filter(a => guaranteedIds.includes(a.id));
             },
-            createContestant: async function () {
+            createContestant: function () {
                 HTTP.post("/guarantees/contestants", {...this.contestant})
-                    .then(async (res) => {
-                        await this.$store.dispatch('popMessage', {
+                    .then((res) => {
+                        this.$store.dispatch('popMessage', {
                             text: "Soutěžící úspěšně registrován",
                             color: 'success'
                         });

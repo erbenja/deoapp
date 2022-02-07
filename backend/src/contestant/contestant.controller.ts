@@ -42,7 +42,7 @@ export class ContestantController {
     @Put(':id')
     @UseGuards(JwtAccessAuthGuard, RolesGuard)
     @SetMetadata('roles', ['guarantee', 'admin'])
-    @UsePipes(ValidationPipe)
+    // @UsePipes(ValidationPipe)
     updateContestant(
         @Param('id', ParseIntPipe) id,
         @Body() contestantDTO: ContestantDTO

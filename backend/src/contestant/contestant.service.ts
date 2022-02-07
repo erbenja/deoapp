@@ -29,6 +29,7 @@ export class ContestantService extends BaseService<ContestantEntity, ContestantR
         newContestant.email = email;
         newContestant.classNum = classNum;
         newContestant.birthdate = birthdate;
+        console.log(newContestant);
 
         const foundSchool = await this.schoolsRepository.findOne({where: {id: schoolId}});
         if(foundSchool != undefined) {
@@ -51,9 +52,9 @@ export class ContestantService extends BaseService<ContestantEntity, ContestantR
             let id;
             await getManager().transaction(async manager => {
                 id = (await manager.save(newContestant))['id'];
-                // console.log('--AFTER CONTESTANT--');
+                console.log('--AFTER CONTESTANT--');
                 await manager.save(newAccessCode);
-                // console.log('--AFTER CODE--');
+                console.log('--AFTER CODE--');
             });
 
             // await this.contestantsRepository.save(newContestant);

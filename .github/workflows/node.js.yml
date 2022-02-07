@@ -37,7 +37,7 @@ jobs:
       run: npm run test
 
   frontend-tests:
-    timeout-minutes: 3
+    timeout-minutes: 7
     runs-on: ubuntu-latest
 
     defaults:

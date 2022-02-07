@@ -45,7 +45,7 @@ export class GuaranteeController {
     @UseGuards(JwtAccessAuthGuard, RolesGuard)
     @SetMetadata('roles', ['admin', 'guarantee'])
     @Post('contestants')
-    // @UsePipes(ValidationPipe)
+    @UsePipes(ValidationPipe)
     addContestantUnderGuarantee(
         // @Param('gid') gid: number,
         // @Param('yid', ParseIntPipe) yid,
