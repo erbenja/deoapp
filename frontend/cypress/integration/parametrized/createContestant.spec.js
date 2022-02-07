@@ -20,7 +20,7 @@ describe('Create New Contestant - [Parametrized]', () => {
         }
     });
 
-    params.filter(a => a.invalidSchool).forEach(param => {
+    params.filter(a => !a.valid).forEach(param => {
         {
             it(`Should NOT be able to create contestant`, () => {
                 const { olympiadYear, firstname, surname, email, birthDate, classNum, school, invalidYear, invalidSchool } = param;
