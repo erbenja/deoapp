@@ -1,0 +1,14 @@
+# ACTS Test Suite Generation: Mon Feb 07 04:46:18 CET 2022
+#  '*' represents don't care value 
+# Degree of interaction coverage: 3
+# Number of parameters: 3
+# Maximum number of values per parameter: 1
+# Number of configurations: 7
+MaxPoints,Description,DescriptionPhoto
+"'10'",'Question?','.jpg'
+"'10'",' ','.jpg'
+"'10'",'Question?','.txt'
+"'10'",'Question?',' '
+"'0'",'Question?','.jpg'
+"'11'",'Question?','.jpg'
+"' '",'Question?','.jpg'

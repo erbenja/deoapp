@@ -23,7 +23,7 @@ describe('Logout as admin.', () => {
                 Bob.perform(checkIfLoginButtonExists);
             });
 
-            it('Then Bob should should not be able to visit Administration Page', () => {
+            it('Then Bob should not be able to visit Administration Page', () => {
                 Bob.perform(visitAdminUsersPage);
                 Bob.perform(checkIfUrlContains, ['/login']);
             });

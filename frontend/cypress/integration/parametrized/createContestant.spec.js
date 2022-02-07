@@ -22,16 +22,18 @@ describe('Create New Contestant - [Parametrized]', () => {
 
     params.filter(a => !a.valid).forEach(param => {
         {
-            it(`Should NOT be able to create contestant`, () => {
-                const { olympiadYear, firstname, surname, email, birthDate, classNum, school, invalidYear, invalidSchool } = param;
+            const { olympiadYear, firstname, surname, email, birthDate, classNum, school, invalidYear, invalidSchool } = param;
+            it(`Should NOT be able to create contestant ${olympiadYear} ${firstname} ${surname} ${email} ${birthDate} ${classNum} ${school}`, () => {
                 const page = new AdminContestantCreatePage();
                 page.visit();
 
-                if (firstname !== '-') page.typeFirstname(firstname)
-                if (surname !== '-') page.typeSurname(surname)
-                if (email !== '-') page.typeEmail(email)
-                if (birthDate !== '-') page.typeBirthDate(birthDate)
-                if (classNum !== '-') page.typeClassNum(classNum)
+                if (firstname !== "-") page.typeFirstname(firstname)
+                if (surname !== "-") page.typeSurname(surname)
+                if (email !== "-") page.typeEmail(email)
+                if (classNum !== "-") page.typeClassNum(classNum)
+
+                if (!birthDate.includes("-")) page.cannotTypeBirthDate(birthDate)
+                else if (birthDate !== "-") page.typeBirthDate(birthDate)
 
                 if (invalidSchool) page.selectSchoolDoesNotContain(school)
                 else page.selectSchool(school)

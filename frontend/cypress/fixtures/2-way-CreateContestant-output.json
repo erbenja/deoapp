@@ -1,6 +1,6 @@
 [
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -10,7 +10,7 @@
     "valid": true
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -20,16 +20,16 @@
     "valid": true
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
     "birthDate": "2022-02-01",
-    "classNum": "-",
+    "classNum": "-1",
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -38,7 +38,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "-",
+    "olympiadYear": "OYtestingCLOSED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -48,7 +48,7 @@
     "invalidYear": true
   },
   {
-    "olympiadYear": "-",
+    "olympiadYear": "OYtestingCLOSED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -56,24 +56,6 @@
     "classNum": "10",
     "school": "Gymnázium Jana Palacha Praha 1",
     "invalidYear": true
-  },
-  {
-    "olympiadYear": "OYtestingCLOSED",
-    "firstname": "Adam",
-    "surname": "Notvotny",
-    "email": "adam@email.cz",
-    "birthDate": "2022-02-01",
-    "classNum": "8",
-    "school": "Gymnázium Jana Palacha Praha 1"
-  },
-  {
-    "olympiadYear": "OYtestingCLOSED",
-    "firstname": "Adam",
-    "surname": "Notvotny",
-    "email": "adam@email.cz",
-    "birthDate": "2022-02-01",
-    "classNum": "10",
-    "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
     "olympiadYear": "OYnotExisting",
@@ -96,7 +78,7 @@
     "invalidYear": true
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "-",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -105,7 +87,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "-",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -114,7 +96,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "P3t3r",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -123,7 +105,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "P3t3r",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -132,7 +114,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "-",
     "email": "adam@email.cz",
@@ -141,7 +123,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "H3rc",
     "email": "adam@email.cz",
@@ -150,7 +132,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "-",
     "email": "adam@email.cz",
@@ -159,7 +141,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "H3rc",
     "email": "adam@email.cz",
@@ -168,7 +150,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "-",
@@ -177,7 +159,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "email.cz",
@@ -186,7 +168,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "-",
@@ -195,7 +177,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "email.cz",
@@ -204,7 +186,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -213,7 +195,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -222,7 +204,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -231,7 +213,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -240,7 +222,7 @@
     "school": "Gymnázium Jana Palacha Praha 1"
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -250,7 +232,7 @@
     "invalidSchool": true
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -260,7 +242,7 @@
     "invalidSchool": true
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",
@@ -270,7 +252,7 @@
     "invalidSchool": true
   },
   {
-    "olympiadYear": "OYtestingOPENED",
+    "olympiadYear": "[2022] OYtestingOPENED",
     "firstname": "Adam",
     "surname": "Notvotny",
     "email": "adam@email.cz",

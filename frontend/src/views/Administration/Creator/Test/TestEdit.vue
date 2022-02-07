@@ -18,12 +18,12 @@
                 <v-row class="justify-space-around">
                     <v-col cols="4">
                         <v-row>
-                            <v-text-field type="number" id="title-input" v-model="timeLimit"
+                            <v-text-field type="number" id="timeLimit" v-model="timeLimit"
                                           label="Časový limit (minuty)"
                                           @change="updateTest('timeLimit', $event)"></v-text-field>
                         </v-row>
                         <v-row>
-                            <v-checkbox type="checkbox" id="closed-input" v-model="test.closed"
+                            <v-checkbox type="checkbox" id="closed" v-model="test.closed"
                                         label="uzavřen" @change="updateTest('closed', $event)"></v-checkbox>
 
                         </v-row>
@@ -37,13 +37,13 @@
 
                     <v-col cols="4">
                         <v-row>
-                            <v-select full-width label="typ nové otázky" :items="types"
+                            <v-select id="questionType" full-width label="typ nové otázky" :items="types"
                                       item-value="id" item-text="type" v-model="newType">
                             </v-select>
                         </v-row>
 
                         <v-row class="justify-end">
-                            <v-btn small color="success" @click="addQuestionToTest">
+                            <v-btn small id="addQuestion" color="success" @click="addQuestionToTest">
                                 <v-icon color="white">
                                     mdi-plus
                                 </v-icon>

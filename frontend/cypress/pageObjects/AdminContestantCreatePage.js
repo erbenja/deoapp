@@ -14,6 +14,7 @@ export default class AdminContestantCreatePage {
     selectOlympiadYearDoesNotContain(year) {
         cy.get("input#olympiadYear").parent().click();
         cy.get(".v-menu__content").contains(year).should('not.exist');
+        cy.get(".v-menu__content").contains('none').click({force:true})
         return this;
     }
 
@@ -41,8 +42,16 @@ export default class AdminContestantCreatePage {
         return this;
     }
 
+    getBirthDateInput() {
+        return cy.get('input#birthDate');
+    }
+
     typeBirthDate(date) {
-        cy.get('input#birthDate').type(date);
+        this.getBirthDateInput().type(date);
+        return this;
+    }
+    cannotTypeBirthDate(date) {
+        expect(date).contain('1st');
         return this;
     }
 
@@ -55,6 +64,7 @@ export default class AdminContestantCreatePage {
     selectSchoolDoesNotContain(school) {
         cy.get("input#school").parent().click()
         cy.get(".v-menu__content").contains(school).should('not.exist');
+        cy.get(".v-menu__content").contains('none').click({force:true})
         return this;
     }
 

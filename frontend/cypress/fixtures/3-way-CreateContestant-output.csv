@@ -1,0 +1,37 @@
+# ACTS Test Suite Generation: Mon Feb 07 04:38:42 CET 2022
+#  '*' represents don't care value 
+# Degree of interaction coverage: 3
+# Number of parameters: 7
+# Maximum number of values per parameter: 2
+# Number of configurations: 30
+OlympiadYear,Firstname,Surname,Email,DateOfBirthDate,Class,School
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,-,Notvotny,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,P3t3r,Notvotny,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,-,Notvotny,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,P3t3r,Notvotny,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,-,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,Prvni,Gymnazium Jana Palacha Praha 1
+-,Adam,Notvotny,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+-,Adam,Notvotny,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingCLOSED,Adam,Notvotny,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingCLOSED,Adam,Notvotny,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYnotExisting,Adam,Notvotny,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYnotExisting,Adam,Notvotny,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,-,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,-,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,H3rc,adam@email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,H3rc,adam@email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,-,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,email.cz,2022-02-01,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,-,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,email.cz,2022-02-01,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,-,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,1st of March,8,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,-,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,1st of March,10,Gymnazium Jana Palacha Praha 1
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,8,-
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,8,ZS Postovni
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,10,-
+OYtestingOPENED,Adam,Notvotny,adam@email.cz,2022-02-01,10,ZS Postovni

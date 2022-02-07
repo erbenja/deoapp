@@ -1,0 +1,22 @@
+# ACTS Test Suite Generation: Mon Feb 07 04:51:46 CET 2022
+#  '*' represents don't care value 
+# Degree of interaction coverage: 2
+# Number of parameters: 5
+# Maximum number of values per parameter: 2
+# Number of configurations: 15
+Year,Name,Decription,OpenToRegistration,RegistrastionDeadline
+2022,'YearName','Descript','checked','2020-02-01'
+2022,'YearName','Descript','unchecked','2020-02-01'
+2022,'YearName','Descript','unchecked',' '
+2022,'YearName','Descript','checked','1st of March 2020'
+"' '",'YearName','Descript','unchecked','2020-02-01'
+"'DvaTisice'",'YearName','Descript','checked','2020-02-01'
+2022,'YearName','Descript','checked',' '
+2022,'YearName','Descript','unchecked','1st of March 2020'
+2022,'YearName','Descript','undefined','2020-02-01'
+"' '",'YearName','Descript','checked','2020-02-01'
+"'DvaTisice'",'YearName','Descript','unchecked','2020-02-01'
+2022,' ','Descript','checked','2020-02-01'
+2022,' ','Descript','unchecked','2020-02-01'
+2022,'YearName',' ','checked','2020-02-01'
+2022,'YearName',' ','unchecked','2020-02-01'

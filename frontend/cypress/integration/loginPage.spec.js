@@ -18,3 +18,17 @@ it('Can visit AdminUsers as Admin user', () => {
   usersPage.displayedUsersShouldContain('Adam')
     .displayedUsersShouldContain('Novotny');
 })
+
+it('Entering invalid username should keep user on login page', () => {
+  const loginPage = new LoginPage();
+  loginPage.visit().logIn('NOTEXISTING', 'password');
+
+  waitForRedirection('/login');
+})
+
+it('Entering invalid username should keep user on login page', () => {
+  const loginPage = new LoginPage();
+  loginPage.visit().logIn('admin', 'NOTpassword');
+
+  waitForRedirection('/login');
+})

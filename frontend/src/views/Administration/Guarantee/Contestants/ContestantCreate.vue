@@ -75,6 +75,7 @@
                 const res = await HTTP.get("/olympiadyears");
                 this.years = res.data.filter(a => a.openToPublic);
                 this.years.forEach(a => a.name = `[${a.year}] ${a.name}`);
+                this.years.push({name: 'none', id: 0});
             },
             getSchools: async function () {
                 const res = await HTTP.get("/schools");
@@ -84,6 +85,7 @@
                 guaranteedIds = guaranteedIds.map(a => a.id);
 
                 this.schools = res.data.filter(a => guaranteedIds.includes(a.id));
+                this.schools.push({name: 'none', id: 0});
             },
             createContestant: function () {
                 HTTP.post("/guarantees/contestants", {...this.contestant})
