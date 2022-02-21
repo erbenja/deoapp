@@ -61,7 +61,7 @@ import {FileModule} from "./file/file.module";
         SchoolModule,
         TestModule,
         MailerModule.forRoot({
-            transport: 'smtps://kulisek97@seznam.cz:whatthefuck@smtp.seznam.cz',
+            transport: 'smtps://test@seznam.cz:password@smtp.seznam.cz',
             defaults: {
                 from: '"nest-modules" <modules@nestjs.com>',
             },
